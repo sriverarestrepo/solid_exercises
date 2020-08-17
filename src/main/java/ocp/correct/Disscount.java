@@ -1,5 +1,7 @@
 package ocp.correct;
 
-public class Disscount {
+public interface Disscount {
+
+    double apply (double price);
 
 }
