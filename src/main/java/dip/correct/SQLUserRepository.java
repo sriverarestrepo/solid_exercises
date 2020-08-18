@@ -5,6 +5,7 @@ public class SQLUserRepository implements UserRepository{
 
     public User getUser(int id) {
         //Logica para obtener usuario
+        System.out.println("Getting User from SQL Repository");
         System.out.println("Getting User: " + id);
 
         return new User(1,"CARLON","Carlos Londono","prueba@prueba.com");
