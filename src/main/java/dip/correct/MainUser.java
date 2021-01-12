@@ -20,16 +20,16 @@ public class MainUser {
 
     private static void showUserFromLocalRepo(){
         UserManagerSecodForm userManagerSecodForm = new UserManagerSecodForm(new LocalUserRepository());
-        userManagerSecodForm.showUser();
+        userManagerSecodForm.showUser(1);
     }
 
     private static void showUserFromRemoteRepo(){
         UserManagerSecodForm userManagerSecodForm = new UserManagerSecodForm(new RemoteUserRepository());
-        userManagerSecodForm.showUser();
+        userManagerSecodForm.showUser(1);
     }
 
     private static void showUserFromSQLRepo(){
         UserManagerSecodForm userManagerSecodForm = new UserManagerSecodForm(new SQLUserRepository());
-        userManagerSecodForm.showUser();
+        userManagerSecodForm.showUser(2);
     }
 }

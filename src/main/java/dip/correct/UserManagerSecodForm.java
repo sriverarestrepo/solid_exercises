@@ -9,8 +9,8 @@ public class UserManagerSecodForm {
         this.userRepository = userRepo;
     }
 
-    public void showUser(){
-        User user = userRepository.getUser(1);
+    public void showUser(int id){
+        User user = userRepository.getUser(id);
 
         System.out.println("ID:       " + user.getId());
         System.out.println("USERNAME: " + user.getUsername());
